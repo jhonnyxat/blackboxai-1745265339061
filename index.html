@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Universal - Tu farmacia online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg">
+</head>
+<body class="font-[Inter] bg-white">
+    <!-- Top Bar -->
+    <div class="bg-[#00A650] text-white py-2">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <p class="text-sm">¡Envío gratis en pedidos mayores a S/99!</p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-sm hover:underline">Contacto</a>
+                    <a href="#" class="text-sm hover:underline">Ayuda</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between gap-6">
+                <!-- Logo -->
+                <a href="/" class="w-48">
+                    <img src="https://images.pexels.com/photos/4047186/pexels-photo-4047186.jpeg" alt="Farmacia Universal" class="h-12 object-contain">
+                </a>
+
+                <!-- Search Bar -->
+                <div class="flex-1 max-w-2xl">
+                    <div class="relative">
+                        <input type="text" 
+                               placeholder="¿Qué estás buscando?" 
+                               class="w-full px-4 py-3 bg-gray-100 border-0 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00A650] focus:bg-white transition-all">
+                        <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-[#00A650] transition-colors">
+                            <i class="fas fa-search text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- User Actions -->
+                <div class="flex items-center gap-4">
+                    <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-[#00A650] transition-colors">
+                        <i class="fas fa-user text-xl"></i>
+                        <span class="hidden sm:inline">Mi cuenta</span>
+                    </a>
+                    <div class="relative">
+                        <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-[#00A650] transition-colors">
+                            <i class="fas fa-shopping-cart text-xl"></i>
+                            <span class="hidden sm:inline">Carrito</span>
+                            <span class="absolute -top-2 -right-2 bg-[#00A650] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="mt-4">
+                <ul class="flex flex-wrap gap-x-8 gap-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-[#00A650] transition-colors text-sm font-medium">Medicamentos</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#00A650] transition-colors text-sm font-medium">Cuidado Personal</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#00A650] transition-colors text-sm font-medium">Dermocosméticos</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#00A650] transition-colors text-sm font-medium">Bebés y Mamá</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#00A650] transition-colors text-sm font-medium">Nutrición</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#00A650] transition-colors text-sm font-medium">Ofertas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                <div class="carousel relative">
+                    <div class="carousel-item relative">
+                        <img src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg" 
+                             alt="Promoción" 
+                             class="w-full h-[450px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center">
+                            <div class="text-white px-12 max-w-2xl">
+                                <h1 class="text-5xl font-bold mb-4 leading-tight">Cuida tu salud con los mejores productos</h1>
+                                <p class="text-2xl mb-8 opacity-90">Encuentra todo lo que necesitas en un solo lugar, con la garantía de Farmacia Universal</p>
+                                <div class="flex gap-4">
+                                    <button class="bg-[#00A650] text-white px-8 py-3 rounded-lg hover:bg-[#008540] transition-all transform hover:scale-105 flex items-center gap-2">
+                                        Comprar ahora
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                    <button class="bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-lg hover:bg-white/30 transition-all">
+                                        Ver ofertas
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Navigation -->
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                    <button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                    <button class="w-3 h-3 rounded-full bg-white transition-all"></button>
+                    <button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold">Categorías Populares</h2>
+                <a href="#" class="text-[#00A650] hover:text-[#008540] transition-colors flex items-center gap-2">
+                    Ver todas
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-white shadow-md">
+                            <img src="https://images.pexels.com/photos/4047186/pexels-photo-4047186.jpeg" 
+                                 alt="Medicamentos" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <h3 class="font-medium text-gray-800 group-hover:text-[#00A650] transition-colors">Medicamentos</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-white shadow-md">
+                            <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg" 
+                                 alt="Cuidado Personal" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <h3 class="font-medium text-gray-800 group-hover:text-[#00A650] transition-colors">Cuidado Personal</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-white shadow-md">
+                            <img src="https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg" 
+                                 alt="Dermocosméticos" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <h3 class="font-medium text-gray-800 group-hover:text-[#00A650] transition-colors">Dermocosméticos</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-white shadow-md">
+                            <img src="https://images.pexels.com/photos/3875080/pexels-photo-3875080.jpeg" 
+                                 alt="Bebés y Mamá" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <h3 class="font-medium text-gray-800 group-hover:text-[#00A650] transition-colors">Bebés y Mamá</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-white shadow-md">
+                            <img src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg" 
+                                 alt="Nutrición" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <h3 class="font-medium text-gray-800 group-hover:text-[#00A650] transition-colors">Nutrición</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-card group">
+                    <div class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-white shadow-md">
+                            <img src="https://images.pexels.com/photos/3683098/pexels-photo-3683098.jpeg" 
+                                 alt="Ofertas" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <h3 class="font-medium text-gray-800 group-hover:text-[#00A650] transition-colors">Ofertas</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold">Productos Destacados</h2>
+                <div class="flex gap-4">
+                    <button class="text-gray-400 hover:text-[#00A650] transition-colors">
+                        <i class="fas fa-chevron-left text-xl"></i>
+                    </button>
+                    <button class="text-[#00A650] hover:text-[#008540] transition-colors">
+                        <i class="fas fa-chevron-right text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg" 
+                             alt="Producto 1" 
+                             class="w-full h-48 object-cover rounded-t-xl">
+                        <div class="absolute top-3 right-3">
+                            <button class="bg-white/80 backdrop-blur-sm p-2 rounded-full hover:bg-white transition-colors">
+                                <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="mb-3">
+                            <h3 class="font-semibold text-lg mb-1 group-hover:text-[#00A650] transition-colors">Vitamina C</h3>
+                            <p class="text-gray-600 text-sm">Suplemento vitamínico</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-[#00A650] font-bold text-xl">S/ 29.90</span>
+                                <span class="text-gray-400 text-sm line-through ml-2">S/ 35.90</span>
+                            </div>
+                            <button class="bg-[#00A650] text-white px-4 py-2 rounded-lg hover:bg-[#008540] transition-all transform hover:scale-105 flex items-center gap-2">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3683098/pexels-photo-3683098.jpeg" 
+                             alt="Producto 2" 
+                             class="w-full h-48 object-cover rounded-t-xl">
+                        <div class="absolute top-3 right-3">
+                            <button class="bg-white/80 backdrop-blur-sm p-2 rounded-full hover:bg-white transition-colors">
+                                <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                            </button>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-red-500 text-white px-2 py-1 rounded-lg text-sm">-20%</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="mb-3">
+                            <h3 class="font-semibold text-lg mb-1 group-hover:text-[#00A650] transition-colors">Crema Hidratante</h3>
+                            <p class="text-gray-600 text-sm">Cuidado facial</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-[#00A650] font-bold text-xl">S/ 45.90</span>
+                                <span class="text-gray-400 text-sm line-through ml-2">S/ 57.90</span>
+                            </div>
+                            <button class="bg-[#00A650] text-white px-4 py-2 rounded-lg hover:bg-[#008540] transition-all transform hover:scale-105 flex items-center gap-2">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg" 
+                             alt="Producto 3" 
+                             class="w-full h-48 object-cover rounded-t-xl">
+                        <div class="absolute top-3 right-3">
+                            <button class="bg-white/80 backdrop-blur-sm p-2 rounded-full hover:bg-white transition-colors">
+                                <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="mb-3">
+                            <h3 class="font-semibold text-lg mb-1 group-hover:text-[#00A650] transition-colors">Protector Solar</h3>
+                            <p class="text-gray-600 text-sm">Cuidado de la piel</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-[#00A650] font-bold text-xl">S/ 59.90</span>
+                            </div>
+                            <button class="bg-[#00A650] text-white px-4 py-2 rounded-lg hover:bg-[#008540] transition-all transform hover:scale-105 flex items-center gap-2">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg" 
+                             alt="Producto 4" 
+                             class="w-full h-48 object-cover rounded-t-xl">
+                        <div class="absolute top-3 right-3">
+                            <button class="bg-white/80 backdrop-blur-sm p-2 rounded-full hover:bg-white transition-colors">
+                                <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                            </button>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-[#00A650] text-white px-2 py-1 rounded-lg text-sm">Nuevo</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="mb-3">
+                            <h3 class="font-semibold text-lg mb-1 group-hover:text-[#00A650] transition-colors">Shampoo Natural</h3>
+                            <p class="text-gray-600 text-sm">Cuidado capilar</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-[#00A650] font-bold text-xl">S/ 35.90</span>
+                            </div>
+                            <button class="bg-[#00A650] text-white px-4 py-2 rounded-lg hover:bg-[#008540] transition-all transform hover:scale-105 flex items-center gap-2">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-20 bg-gradient-to-r from-[#00A650] to-[#008540] relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/3683098/pexels-photo-3683098.jpeg')] opacity-10 bg-cover bg-center"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl mx-auto text-center text-white">
+                <h2 class="text-4xl font-bold mb-4">Suscríbete a nuestro boletín</h2>
+                <p class="text-lg mb-8 opacity-90">Recibe las últimas ofertas, novedades y consejos de salud directamente en tu correo</p>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl">
+                    <form class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-1 relative">
+                            <i class="fas fa-envelope absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                            <input type="email" 
+                                   placeholder="Tu correo electrónico" 
+                                   class="w-full pl-12 pr-4 py-3 rounded-xl bg-white/90 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50 transition-all">
+                        </div>
+                        <button type="submit" 
+                                class="bg-white text-[#00A650] px-8 py-3 rounded-xl hover:bg-gray-100 transition-all transform hover:scale-105 font-medium flex items-center justify-center gap-2">
+                            <span>Suscribirse</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                    <p class="text-sm mt-4 opacity-80">Al suscribirte, aceptas recibir correos promocionales y noticias de Farmacia Universal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                <div class="lg:col-span-2">
+                    <img src="https://images.pexels.com/photos/4047186/pexels-photo-4047186.jpeg" 
+                         alt="Farmacia Universal" 
+                         class="h-10 mb-6">
+                    <p class="text-gray-400 mb-6 max-w-md">Tu salud es nuestra prioridad. Encuentra los mejores productos farmacéuticos y de cuidado personal con la garantía y respaldo de Farmacia Universal.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition-colors">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Sobre Nosotros</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Quiénes Somos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Nuestras Tiendas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Trabaja con Nosotros</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog de Salud</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Servicio al Cliente</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Centro de Ayuda</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Términos y Condiciones</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Política de Privacidad</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Libro de Reclamaciones</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Métodos de Pago</h3>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="bg-white/10 p-2 rounded-lg">
+                            <i class="fab fa-cc-visa text-2xl"></i>
+                        </div>
+                        <div class="bg-white/10 p-2 rounded-lg">
+                            <i class="fab fa-cc-mastercard text-2xl"></i>
+                        </div>
+                        <div class="bg-white/10 p-2 rounded-lg">
+                            <i class="fab fa-cc-amex text-2xl"></i>
+                        </div>
+                        <div class="bg-white/10 p-2 rounded-lg">
+                            <i class="fas fa-credit-card text-2xl"></i>
+                        </div>
+                        <div class="bg-white/10 p-2 rounded-lg">
+                            <i class="fas fa-money-bill-wave text-2xl"></i>
+                        </div>
+                        <div class="bg-white/10 p-2 rounded-lg">
+                            <i class="fab fa-paypal text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm">&copy; 2024 Farmacia Universal. Todos los derechos reservados.</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg" alt="Libro de reclamaciones" class="h-10 rounded">
+                        <img src="https://images.pexels.com/photos/3683098/pexels-photo-3683098.jpeg" alt="Certificación de seguridad" class="h-10 rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
